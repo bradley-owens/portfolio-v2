@@ -1,0 +1,74 @@
+.main {
+  position: relative;
+  height: 800px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 1rem 4rem;
+}
+
+.content h1 {
+  font-size: 7rem;
+  margin-bottom: -4rem;
+}
+
+.content h2 {
+  font-size: 7rem;
+}
+
+.x {
+  top: 4rem;
+  right: 5rem;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 214, 10, 0.1);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 200px;
+  animation: x 150s linear infinite alternate;
+}
+
+.x p {
+  visibility: hidden;
+}
+
+.y {
+  bottom: 6rem;
+  left: 5rem;
+  position: absolute;
+  z-index: 1;
+  /* background-color: rgba(255, 255, 255, 0.232); */
+  background-color: rgba(255, 214, 10, 0.1);
+  width: 24rem;
+  height: 24rem;
+  border-radius: 200px;
+  animation: y 150s linear infinite alternate;
+}
+
+.y p {
+  visibility: hidden;
+}
+
+@keyframes x {
+  0% {
+    transform: translateX(calc(0vw));
+  }
+  100% {
+    transform: translateX(calc(-70vw));
+  }
+}
+
+@keyframes y {
+  0% {
+    transform: translateX(calc(0vw));
+  }
+  100% {
+    transform: translateX(calc(70vw));
+  }
+}

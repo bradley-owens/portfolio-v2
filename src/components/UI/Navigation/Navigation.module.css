@@ -1,0 +1,36 @@
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav h3 {
+  font-size: 3rem;
+}
+
+.links {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.link:hover {
+  transform: translateY(-0.5rem);
+  transition: 0.3s;
+  color: #ffd60a;
+
+  cursor: pointer;
+}
