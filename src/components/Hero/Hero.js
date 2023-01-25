@@ -3,6 +3,7 @@ import styles from "./Hero.module.css";
 
 const Hero = () => {
   const hStyle = { color: "#ffd60a" };
+
   return (
     <div className={styles.main}>
       <div className={styles.content}>
@@ -11,12 +12,12 @@ const Hero = () => {
           whileInView="visible"
           variants={{
             hidden: {
-              x: 40,
+              y: 40,
               scale: 0.8,
               opacity: 0,
             },
             visible: {
-              x: -40,
+              y: -40,
               scale: 1,
               opacity: 1,
               transition: {
@@ -34,12 +35,12 @@ const Hero = () => {
           whileInView="visible"
           variants={{
             hidden: {
-              x: 40,
+              y: 40,
               scale: 0.8,
               opacity: 0,
             },
             visible: {
-              x: -40,
+              y: -40,
               scale: 1,
               opacity: 1,
               transition: {
