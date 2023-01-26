@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: 950px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +23,43 @@
 
 .about p {
   font-size: 3rem;
-  width: 50vw;
+  width: 800px;
   margin-top: -1.5rem;
+}
+
+@media (max-width: 1560px) {
+  .about p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 905px) {
+  .about h2 {
+    font-size: 3.5rem;
+  }
+  .about p {
+    font-size: 2.1rem;
+    width: 700px;
+  }
+}
+
+@media (max-width: 780px) {
+  .about h2 {
+    font-size: 3rem;
+  }
+  .about p {
+    font-size: 1.7rem;
+    width: 500px;
+  }
+}
+
+@media (max-width: 484px) {
+  .about h2 {
+    font-size: 2.5rem;
+  }
+  .about p {
+    font-size: 1.5rem;
+    width: 300px;
+    margin-top: -1rem;
+  }
 }

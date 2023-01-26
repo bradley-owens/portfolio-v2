@@ -53,6 +53,7 @@ const Skills = () => {
             return (
               <motion.div
                 className={styles.technology}
+                key={Math.random()}
                 initial="hidden"
                 whileInView="visible"
                 variants={{
