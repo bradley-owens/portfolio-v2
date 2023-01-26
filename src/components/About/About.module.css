@@ -25,6 +25,7 @@
   font-size: 3rem;
   width: 800px;
   margin-top: -1.5rem;
+  /* color: rgba(255, 255, 255, 0.42); */
 }
 
 @media (max-width: 1560px) {
@@ -33,7 +34,7 @@
   }
 }
 
-@media (max-width: 905px) {
+@media (max-width: 1005px) {
   .about h2 {
     font-size: 3.5rem;
   }
