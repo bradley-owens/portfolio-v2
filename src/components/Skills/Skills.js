@@ -13,6 +13,7 @@ const Skills = () => {
     "NextJS",
   ];
 
+  let time = 0.1;
   return (
     <div className={styles.container}>
       <motion.div
@@ -48,10 +49,30 @@ const Skills = () => {
       <main>
         <div className={styles["technology-container"]}>
           {technologies.map((item) => {
+            time = time + 0.2;
             return (
-              <div className={styles.technology}>
+              <motion.div
+                className={styles.technology}
+                initial="hidden"
+                whileInView="visible"
+                variants={{
+                  hidden: {
+                    y: 40,
+                    scale: 0.8,
+                    opacity: 0,
+                  },
+                  visible: {
+                    y: -40,
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                      delay: time,
+                    },
+                  },
+                }}
+              >
                 <p>{item}</p>
-              </div>
+              </motion.div>
             );
           })}
         </div>
