@@ -1,17 +1,26 @@
-import styles from "./One.module.css";
-import imgSrc from "../../../IMG/moka-bar.png";
+import styles from "./Project.module.css";
 import { motion } from "framer-motion";
 
-const One = () => {
+const Project = ({
+  imgSrc,
+  type,
+  title,
+  technologies,
+  info,
+  animationDirectionLeft,
+  animationDirectionRight,
+  textAlign,
+  flexDirection,
+}) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={flexDirection}>
       <motion.div
-        // className={styles.about}
         initial="hidden"
         whileInView="visible"
         variants={{
           hidden: {
-            x: -80,
+            // x: -80,
+            x: animationDirectionLeft,
             scale: 0.8,
             opacity: 0,
           },
@@ -33,7 +42,8 @@ const One = () => {
         whileInView="visible"
         variants={{
           hidden: {
-            x: 80,
+            // x: 80,
+            x: animationDirectionRight,
             scale: 0.8,
             opacity: 0,
           },
@@ -47,21 +57,16 @@ const One = () => {
           },
         }}
       >
-        <h4>Freelance Project</h4>
-        <h3>Moka Bar</h3>
+        <h4>{type}</h4>
+        <h3>{title}</h3>
         <div className={styles["project-technologies_container"]}>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
-          <p>NextJS</p>
+          {technologies.map((technology) => {
+            return <p key={Math.random()}>{technology}</p>;
+          })}
         </div>
         <div className={styles["info-background"]}>
           <div className={styles.info}>
-            <p>
-              Moka Bar is a website made for the moka bar cafe in Cairns QLD.
-              This website was built with NextJS to optimize server side
-              rendering and routes to the multiple pages it provides.
-            </p>
+            <p styles={textAlign}>{info}</p>
           </div>
         </div>
       </motion.div>
@@ -69,4 +74,4 @@ const One = () => {
   );
 };
 
-export default One;
+export default Project;
