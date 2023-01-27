@@ -1,0 +1,15 @@
+.projects-container {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h2 {
+  font-size: 4rem;
+  border-bottom: 3px solid #ffd60a;
+  padding-bottom: 10px;
+}

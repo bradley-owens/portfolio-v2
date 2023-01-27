@@ -1,0 +1,64 @@
+.container {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container img {
+  width: 45rem;
+  height: 25rem;
+  border-radius: 20px;
+}
+
+.project-info_container {
+  padding: 1rem 3rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  width: 30%;
+}
+
+.project-info_container h4 {
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 1.3rem;
+  margin-bottom: -1.8rem;
+}
+.project-info_container h3 {
+  font-size: 2.5rem;
+  border-bottom: 3px solid #ffd60a;
+}
+
+.project-technologies_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-technologies_container p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: -1.5rem;
+}
+
+.info {
+  background-color: rgba(255, 214, 10, 1);
+  padding: 0.5rem 1rem;
+}
+
+/* .info-background {
+  background-color: #ffd60a;
+  padding: 0rem 0.2rem 0.2rem 0rem;
+} */
+
+.info p {
+  /* color: white; */
+  color: black;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
