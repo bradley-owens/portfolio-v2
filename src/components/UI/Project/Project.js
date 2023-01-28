@@ -1,5 +1,6 @@
 import styles from "./Project.module.css";
 import { motion } from "framer-motion";
+import useDeviceSize from "../../Hooks/useDeviceSize";
 
 const Project = ({
   imgSrc,
@@ -13,8 +14,14 @@ const Project = ({
   flexDirection,
   alignDirection,
 }) => {
+  const [width] = useDeviceSize();
+  const tabletFlex = { flexDirection: "column-reverse" };
+
   return (
-    <div className={styles.container} style={flexDirection}>
+    <div
+      className={styles.container}
+      style={width < 1093 ? tabletFlex : flexDirection}
+    >
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -39,7 +46,7 @@ const Project = ({
       </motion.div>
       <motion.div
         className={styles["project-info_container"]}
-        style={{ alignItems: alignDirection }}
+        style={{ alignItems: width < 1093 ? "center" : alignDirection }}
         initial="hidden"
         whileInView="visible"
         variants={{
@@ -63,7 +70,7 @@ const Project = ({
         <h3>{title}</h3>
         <div
           className={styles["project-technologies_container"]}
-          style={{ justifyContent: alignDirection }}
+          style={{ justifyContent: width < 1093 ? "center" : alignDirection }}
         >
           {technologies.map((technology) => {
             return <p key={Math.random()}>{technology}</p>;
