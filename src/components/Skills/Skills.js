@@ -15,7 +15,7 @@ const Skills = () => {
 
   let time = 0.1;
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="skills">
       <motion.div
         className={styles.header}
         initial="hidden"

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const About = () => {
   const hStyle = { color: "#ffd60a" };
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <motion.div
         className={styles.about}
         initial="hidden"

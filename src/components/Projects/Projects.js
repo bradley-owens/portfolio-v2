@@ -68,19 +68,19 @@ const Projects = () => {
   ];
 
   return (
-    <div className={styles["projects-container"]}>
+    <div className={styles["projects-container"]} id="projects">
       <motion.div
         className={styles.title}
         initial="hidden"
         whileInView="visible"
         variants={{
           hidden: {
-            x: 40,
+            y: -40,
             scale: 0.8,
             opacity: 0,
           },
           visible: {
-            x: -40,
+            y: 40,
             scale: 1,
             opacity: 1,
             transition: {

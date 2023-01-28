@@ -9,8 +9,27 @@ const Contact = () => {
   const hStyle = { color: "#ffd60a" };
 
   return (
-    <div className={styles["contact-container"]}>
-      <div className={styles.information}>
+    <div className={styles["contact-container"]} id="contact">
+      <motion.div
+        className={styles.information}
+        initial="hidden"
+        whileInView="visible"
+        variants={{
+          hidden: {
+            x: -40,
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            x: 40,
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 0,
+            },
+          },
+        }}
+      >
         <h2>
           Like what you see <span style={hStyle}>?</span>
         </h2>
@@ -21,7 +40,7 @@ const Contact = () => {
           </p>
           <p>If you think im your guy then send me an email!</p>
         </div>
-      </div>
+      </motion.div>
       <div className={styles["contact-links_container"]}>
         {/* <h3>Get in contact</h3> */}
         <div className={styles["links-container"]}>

@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -16,4 +20,11 @@ body {
 .app {
   background-color: black;
   color: white;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.section {
+  scroll-snap-align: start;
 }

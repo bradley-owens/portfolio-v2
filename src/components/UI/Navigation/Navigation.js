@@ -12,16 +12,19 @@ const Navigation = () => {
     <div className={styles.nav}>
       <h3>Bradley Owens</h3>
       <div className={navState ? styles.open : styles.links}>
-        <p className={styles.link}>Home</p>
-        <p className={styles.link}>About</p>
-        <p className={styles.link}>Projects</p>
-        <p className={styles.link}>Contact</p>
+        <a className={styles.link} href="#about">
+          About
+        </a>
+        <a className={styles.link} href="#skills">
+          Skills
+        </a>
+        <a className={styles.link} href="#projects">
+          Projects
+        </a>
+        <a className={styles.link} href="#contact">
+          Contact
+        </a>
       </div>
-      {/* <h3>Bradley Owens</h3>
-      <div className={navState ? styles.open : styles.links}>
-        <p className={styles.link}>Projects</p>
-        <p className={styles.link}>Contact</p>
-      </div> */}
 
       <div className={styles.hamburger} onClick={toggleMobileNav}>
         <div

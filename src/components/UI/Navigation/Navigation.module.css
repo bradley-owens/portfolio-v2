@@ -1,12 +1,14 @@
 .nav {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* background-color: rgba(0, 0, 0, 0.9);
+  z-index: 5; */
 }
 
 .hamburger {
