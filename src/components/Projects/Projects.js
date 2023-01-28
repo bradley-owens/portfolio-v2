@@ -75,12 +75,12 @@ const Projects = () => {
         whileInView="visible"
         variants={{
           hidden: {
-            y: 40,
+            x: 40,
             scale: 0.8,
             opacity: 0,
           },
           visible: {
-            y: -40,
+            x: -40,
             scale: 1,
             opacity: 1,
             transition: {

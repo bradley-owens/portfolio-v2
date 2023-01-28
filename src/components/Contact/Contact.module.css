@@ -1,0 +1,70 @@
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  height: 850px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -2.5rem;
+}
+
+.information h2 {
+  font-size: 4rem;
+  border-bottom: 3px solid #ffd60a;
+  padding-bottom: 10px;
+}
+
+.brief {
+  margin-top: -4rem;
+}
+
+.brief p {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.81);
+}
+
+/* .contact-links_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .contact-links_container h3 {
+  font-size: 2rem;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color: #ffd60a;
+  padding: 1.5rem 2rem;
+} */
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: -2.5rem;
+}
+
+.link img {
+  width: 2.5rem;
+}
+
+.link p {
+  font-size: 2.5rem;
+}
