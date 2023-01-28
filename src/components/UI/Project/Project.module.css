@@ -1,5 +1,5 @@
 .container {
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,16 +10,15 @@
   width: 45rem;
   height: 25rem;
   border-radius: 20px;
-  /* background-color: #ffd60a; */
   opacity: 0.8;
 }
 
 .project-info_container {
-  padding: 1rem 3rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  /* align-items: flex-start; */
   width: 30%;
 }
 
@@ -34,10 +33,11 @@
 }
 
 .project-technologies_container {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: flex-start; */
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .project-technologies_container p {
@@ -57,4 +57,7 @@
   font-size: 1.1rem;
   line-height: 1.4;
   font-weight: 500;
+}
+
+@media (max-width: 1500px) {
 }

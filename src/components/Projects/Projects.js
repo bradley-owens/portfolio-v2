@@ -13,6 +13,8 @@ const Projects = () => {
   const projectAlignRight = { textAlign: "right" };
   const projectFlexNormal = { flexDirection: "row" };
   const projectFlexReverse = { flexDirection: "row-reverse" };
+  const projectFlexAlignStart = "flex-start";
+  const projectFlexAlignEnd = "flex-end";
 
   const projectInformation = [
     {
@@ -25,6 +27,7 @@ const Projects = () => {
       animationDirectionRight: 80,
       textAlign: projectAlignRight,
       flexDirection: projectFlexNormal,
+      alignDirection: projectFlexAlignEnd,
     },
     {
       imgSrc: project2ImgSrc,
@@ -36,6 +39,7 @@ const Projects = () => {
       animationDirectionRight: -80,
       textAlign: projectAlignLeft,
       flexDirection: projectFlexReverse,
+      alignDirection: projectFlexAlignStart,
     },
     {
       imgSrc: project3ImgSrc,
@@ -47,6 +51,7 @@ const Projects = () => {
       animationDirectionRight: 80,
       textAlign: projectAlignRight,
       flexDirection: projectFlexNormal,
+      alignDirection: projectFlexAlignEnd,
     },
     {
       imgSrc: project4ImgSrc,
@@ -58,6 +63,7 @@ const Projects = () => {
       animationDirectionRight: -80,
       textAlign: projectAlignLeft,
       flexDirection: projectFlexReverse,
+      alignDirection: projectFlexAlignStart,
     },
   ];
 
@@ -101,6 +107,7 @@ const Projects = () => {
             animationDirectionRight={project.animationDirectionRight}
             textAlign={project.textAlign}
             flexDirection={project.flexDirection}
+            alignDirection={project.alignDirection}
           />
         );
       })}

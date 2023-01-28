@@ -11,6 +11,7 @@ const Project = ({
   animationDirectionRight,
   textAlign,
   flexDirection,
+  alignDirection,
 }) => {
   return (
     <div className={styles.container} style={flexDirection}>
@@ -38,6 +39,7 @@ const Project = ({
       </motion.div>
       <motion.div
         className={styles["project-info_container"]}
+        style={{ alignItems: alignDirection }}
         initial="hidden"
         whileInView="visible"
         variants={{
@@ -59,7 +61,10 @@ const Project = ({
       >
         <h4>{type}</h4>
         <h3>{title}</h3>
-        <div className={styles["project-technologies_container"]}>
+        <div
+          className={styles["project-technologies_container"]}
+          style={{ justifyContent: alignDirection }}
+        >
           {technologies.map((technology) => {
             return <p key={Math.random()}>{technology}</p>;
           })}
