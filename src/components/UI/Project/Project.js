@@ -1,6 +1,8 @@
 import styles from "./Project.module.css";
 import { motion } from "framer-motion";
 import useDeviceSize from "../../Hooks/useDeviceSize";
+import liveIcon from "../../../IMG/Icons/live.png";
+import githubIcon from "../../../IMG/Icons/github.png";
 
 const Project = ({
   imgSrc,
@@ -23,6 +25,8 @@ const Project = ({
       style={width < 1093 ? tabletFlex : flexDirection}
     >
       <motion.div
+        className={styles["img-link_container"]}
+        style={width < 1093 ? tabletFlex : flexDirection}
         initial="hidden"
         whileInView="visible"
         variants={{
@@ -43,6 +47,13 @@ const Project = ({
         }}
       >
         <img src={imgSrc}></img>
+        <div className={styles["button-container"]}>
+          <img
+            style={{ width: "2.5rem", height: "2.5rem" }}
+            src={liveIcon}
+          ></img>
+          <img style={{ width: "3rem", height: "3rem" }} src={githubIcon}></img>
+        </div>
       </motion.div>
       <motion.div
         className={styles["project-info_container"]}

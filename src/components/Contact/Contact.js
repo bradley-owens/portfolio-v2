@@ -4,9 +4,17 @@ import emailIcon from "../../IMG/Icons/email.png";
 import linkedInIcon from "../../IMG/Icons/linkedIn.png";
 import githubIcon from "../../IMG/Icons/github.png";
 import { motion } from "framer-motion";
+import { AnimationStyle } from "../Hooks/AnimationStyle";
 
 const Contact = () => {
   const hStyle = { color: "#ffd60a" };
+
+  const contactLinks = [
+    { icon: emailIcon, name: "Email", delay: 0 },
+    { icon: phoneIcon, name: "Phone", delay: 0.4 },
+    { icon: linkedInIcon, name: "LinkedIn", delay: 0.8 },
+    { icon: githubIcon, name: "Github", delay: 0.99 },
+  ];
 
   return (
     <div className={styles["contact-container"]} id="contact">
@@ -14,21 +22,7 @@ const Contact = () => {
         className={styles.information}
         initial="hidden"
         whileInView="visible"
-        variants={{
-          hidden: {
-            x: -40,
-            scale: 0.8,
-            opacity: 0,
-          },
-          visible: {
-            x: 40,
-            scale: 1,
-            opacity: 1,
-            transition: {
-              delay: 0,
-            },
-          },
-        }}
+        variants={AnimationStyle(0.2)}
       >
         <h2>
           Like what you see <span style={hStyle}>?</span>
@@ -41,102 +35,21 @@ const Contact = () => {
           <p>If you think im your guy then send me an email!</p>
         </div>
       </motion.div>
-      <div className={styles["contact-links_container"]}>
-        {/* <h3>Get in contact</h3> */}
-        <div className={styles["links-container"]}>
-          <motion.div
-            className={styles.link}
-            initial="hidden"
-            whileInView="visible"
-            variants={{
-              hidden: {
-                x: 40,
-                scale: 0.8,
-                opacity: 0,
-              },
-              visible: {
-                x: -40,
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: 0.1,
-                },
-              },
-            }}
-          >
-            <img src={emailIcon}></img>
-            <p>bradowens17@hotmail.com</p>
-          </motion.div>
-          <motion.div
-            className={styles.link}
-            initial="hidden"
-            whileInView="visible"
-            variants={{
-              hidden: {
-                x: 40,
-                scale: 0.8,
-                opacity: 0,
-              },
-              visible: {
-                x: -40,
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: 0.3,
-                },
-              },
-            }}
-          >
-            <img src={phoneIcon}></img>
-            <p>0428-835-477</p>
-          </motion.div>
-          <motion.div
-            className={styles.link}
-            initial="hidden"
-            whileInView="visible"
-            variants={{
-              hidden: {
-                x: 40,
-                scale: 0.8,
-                opacity: 0,
-              },
-              visible: {
-                x: -40,
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: 0.5,
-                },
-              },
-            }}
-          >
-            <img src={linkedInIcon}></img>
-            <p>LinkedIn</p>
-          </motion.div>
-          <motion.div
-            className={styles.link}
-            initial="hidden"
-            whileInView="visible"
-            variants={{
-              hidden: {
-                x: 40,
-                scale: 0.8,
-                opacity: 0,
-              },
-              visible: {
-                x: -40,
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: 0.9,
-                },
-              },
-            }}
-          >
-            <img src={githubIcon}></img>
-            <p>Github</p>
-          </motion.div>
-        </div>
+
+      <div className={styles["links-container"]}>
+        {contactLinks.map((link) => {
+          return (
+            <motion.div
+              className={styles.link}
+              initial="hidden"
+              whileInView="visible"
+              variants={AnimationStyle(link.delay)}
+            >
+              <img src={link.icon}></img>
+              <p>{link.name}</p>
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );
