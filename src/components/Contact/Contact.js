@@ -46,7 +46,7 @@ const Contact = () => {
               variants={AnimationStyle(link.delay)}
             >
               <img src={link.icon}></img>
-              <p>{link.name}</p>
+              <a href="mailto:bradowens17@hotmail.com">{link.name}</a>
             </motion.div>
           );
         })}
