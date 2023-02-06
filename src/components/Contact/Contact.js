@@ -10,10 +10,30 @@ const Contact = () => {
   const hStyle = { color: "#ffd60a" };
 
   const contactLinks = [
-    { icon: emailIcon, name: "Email", delay: 0 },
-    { icon: phoneIcon, name: "Phone", delay: 0.4 },
-    { icon: linkedInIcon, name: "LinkedIn", delay: 0.8 },
-    { icon: githubIcon, name: "Github", delay: 0.99 },
+    {
+      icon: emailIcon,
+      name: "Email",
+      delay: 0,
+      href: "mailto:bradowens17@hotmail.com",
+    },
+    {
+      icon: phoneIcon,
+      name: "Phone",
+      delay: 0.4,
+      href: "tel:+61428845477",
+    },
+    {
+      icon: linkedInIcon,
+      name: "LinkedIn",
+      delay: 0.8,
+      href: "https://www.linkedin.com/in/bradley-owens-8738b522a/",
+    },
+    {
+      icon: githubIcon,
+      name: "Github",
+      delay: 0.99,
+      href: "https://github.com/bradley-owens",
+    },
   ];
 
   return (
@@ -29,24 +49,29 @@ const Contact = () => {
         </h2>
         <div className={styles.brief}>
           <p>
-            Looking for a permanent role but also take on freelance
+            I am actively seeking both a permanent role and freelance
             opportunities.
           </p>
-          <p>If you think im your guy then send me an email!</p>
+          <p>
+            If you think I could be a valuable asset to your team, I'd love the
+            chance to connect. Feel free to drop me an email anytime!
+          </p>
         </div>
       </motion.div>
 
       <div className={styles["links-container"]}>
-        {contactLinks.map((link) => {
+        {contactLinks.map(({ icon, name, href, delay }) => {
           return (
             <motion.div
               className={styles.link}
               initial="hidden"
               whileInView="visible"
-              variants={AnimationStyle(link.delay)}
+              variants={AnimationStyle(delay)}
             >
-              <img src={link.icon}></img>
-              <a href="mailto:bradowens17@hotmail.com">{link.name}</a>
+              <img src={icon}></img>
+              <a href={href} target="_blank">
+                {name}
+              </a>
             </motion.div>
           );
         })}

@@ -10,6 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   overflow: scroll;
   background-color: black;
+  color: white;
 }
 
 ::-webkit-scrollbar {
@@ -19,8 +20,6 @@ body {
 }
 
 .app {
-  background-color: black;
-  color: white;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;

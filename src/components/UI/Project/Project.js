@@ -10,6 +10,8 @@ const Project = ({
   title,
   technologies,
   info,
+  live,
+  github,
   animationDirectionLeft,
   animationDirectionRight,
   textAlign,
@@ -48,11 +50,12 @@ const Project = ({
       >
         <img src={imgSrc}></img>
         <div className={styles["button-container"]}>
-          <img
-            style={{ width: "2.5rem", height: "2.5rem" }}
-            src={liveIcon}
-          ></img>
-          <img style={{ width: "3rem", height: "3rem" }} src={githubIcon}></img>
+          <a href={live} target="_blank">
+            <img style={{ width: "2.5rem", height: "2.5rem" }} src={liveIcon} />
+          </a>
+          <a href={github} target="_blank">
+            <img style={{ width: "3rem", height: "3rem" }} src={githubIcon} />
+          </a>
         </div>
       </motion.div>
       <motion.div

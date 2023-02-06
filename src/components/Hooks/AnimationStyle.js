@@ -2,7 +2,6 @@ import useDeviceSize from "./useDeviceSize";
 
 export function AnimationStyle(delayTime) {
   const [width] = useDeviceSize();
-  console.log(width);
 
   if (width > 1000) {
     return {

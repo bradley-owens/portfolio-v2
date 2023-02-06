@@ -12,16 +12,16 @@ const Navigation = () => {
     <div className={styles.nav}>
       <h3>Bradley Owens</h3>
       <div className={navState ? styles.open : styles.links}>
-        <a className={styles.link} href="#about">
+        <a className={styles.link} onClick={toggleMobileNav} href="#about">
           About
         </a>
-        <a className={styles.link} href="#skills">
+        <a className={styles.link} onClick={toggleMobileNav} href="#skills">
           Skills
         </a>
-        <a className={styles.link} href="#projects">
+        <a className={styles.link} onClick={toggleMobileNav} href="#projects">
           Projects
         </a>
-        <a className={styles.link} href="#contact">
+        <a className={styles.link} onClick={toggleMobileNav} href="#contact">
           Contact
         </a>
       </div>

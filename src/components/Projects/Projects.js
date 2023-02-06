@@ -22,7 +22,9 @@ const Projects = () => {
       type: "Freelance Project",
       title: "Moka Bar",
       technologies: ["HTML", "CSS", "JavaScript", "NextJS", "GoogleMaps API"],
-      info: " Moka Bar is a website made for the moka bar cafe in Cairns QLD.This website was built with NextJS to optimize server side rendering and routes to the multiple pages it provides.",
+      info: "Moka Bar's website is a digital platform showcasing the cafe in Cairns. Built with NextJS, it offers fast server-side rendering and intuitive navigation between pages, providing customers with necessary information and tools to learn about the cafe, view the menu, and more. All in a beautifully designed, accessible format.",
+      live: "http://www.mokabar.com.au/",
+      github: "https://github.com/bradley-owens/moka-bar",
       animationDirectionLeft: -80,
       animationDirectionRight: 80,
       textAlign: projectAlignRight,
@@ -34,7 +36,9 @@ const Projects = () => {
       type: "Freelance Project",
       title: "Gotya Plumbing Solutions",
       technologies: ["HTML", "CSS", "JavaScript", "ReactJS", "GoogleMaps API"],
-      info: "Gotya Plumbing is a website made for the Gotya Plumbing business in QLD. This website was built with ReactJS as client only requested as a single page website. The website displays all services, reviews and contact information necessary for any client.",
+      info: "Gotya Plumbing's website is a platform for the Gotya Plumbing business based in Queensland. Crafted with ReactJS, it serves as a single-page source for all services, reviews, and contact information required by clients. The website provides a clean and concise presentation of the business, making it easy for customers to find what they need.",
+      live: "https://gotya-plumbing.vercel.app/",
+      github: "https://github.com/bradley-owens/gotya-plumbing",
       animationDirectionLeft: 80,
       animationDirectionRight: -80,
       textAlign: projectAlignLeft,
@@ -46,7 +50,10 @@ const Projects = () => {
       type: "Personal Project",
       title: "Networks",
       technologies: ["HTML", "CSS", "JavaScript", "ReactJS", "Firebase"],
-      info: "Networks is an applications where users can create accounts/login and network with other developers by following and unfollowing to connect through other means of social media. This application implicates the use of authorisation, editing user data and storing with the use of redux and Firebase/Firebase Storage.",
+      info: "Networks is a social networking platform for developers, allowing users to create accounts, connect with others through following and unfollowing, and accessing additional social media links. The app implements authorization, user data editing, and storage through the use of Redux and Firebase/Firebase Storage, ensuring a secure and seamless experience for all users.",
+      live: " https://networks-eight.vercel.app/",
+      github: "https://github.com/bradley-owens/networks",
+
       animationDirectionLeft: -80,
       animationDirectionRight: 80,
       textAlign: projectAlignRight,
@@ -58,7 +65,9 @@ const Projects = () => {
       type: "Personal Project",
       title: "Second Chances",
       technologies: ["HTML", "CSS", "JavaScript", "ReactJS", "PetFinder API"],
-      info: "Second Chances is an application in which users can search and filter through adoptable pets such as cats and dogs to find the perfect friend. This application was built with react to cement the use of passing state through compoenents and the Petfinder API to use the JSON data to render throughout the application.",
+      info: "Second Chances is an app designed to help users find their furry friend. Users can search and filter adoptable pets like cats and dogs, using the Petfinder API to access and render data within the app. The app was built using React, making it easy to pass state between components. A perfect solution for pet lovers on the hunt for a new companion.",
+      live: "https://second-chances.vercel.app/",
+      github: "https://github.com/bradley-owens/Second_Chances",
       animationDirectionLeft: 80,
       animationDirectionRight: -80,
       textAlign: projectAlignLeft,
@@ -103,6 +112,8 @@ const Projects = () => {
             title={project.title}
             technologies={project.technologies}
             info={project.info}
+            live={project.live}
+            github={project.github}
             animationDirectionLeft={project.animationDirectionLeft}
             animationDirectionRight={project.animationDirectionRight}
             textAlign={project.textAlign}

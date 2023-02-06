@@ -21,6 +21,10 @@
   gap: 2rem;
 }
 
+.button-container img:hover {
+  cursor: pointer;
+}
+
 .container img {
   width: 45rem;
   height: 25rem;

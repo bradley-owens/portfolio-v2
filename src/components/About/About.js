@@ -29,10 +29,11 @@ const About = () => {
           About <span style={hStyle}> me </span>
         </h2>
         <p>
-          I'm a <span style={hStyle}> Frontend Web Developer </span> that
-          designs and codes beautifully simple things, and I
-          <span style={hStyle}> love </span>
-          what I do.
+          As a <span style={hStyle}> Frontend Web Developer </span>, I
+          specialize in crafting elegant and functional designs and bringing
+          them to life through code. It's my
+          <span style={hStyle}> passion </span> and I
+          <span style={hStyle}> love </span> what I do.
         </p>
       </motion.div>
     </div>
