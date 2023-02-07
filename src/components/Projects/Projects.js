@@ -5,7 +5,7 @@ import styles from "./Projects.module.css";
 import project1ImgSrc from "../../IMG/moka-bar.png";
 import project2ImgSrc from "../../IMG/gotya-plumbing.png";
 import project3ImgSrc from "../../IMG/networks.png";
-import project4ImgSrc from "../../IMG/second-chances.png";
+import project4ImgSrc from "../../IMG/quiz.png";
 
 const Projects = () => {
   const hStyle = { color: "#ffd60a" };
@@ -62,12 +62,12 @@ const Projects = () => {
     },
     {
       imgSrc: project4ImgSrc,
-      type: "Personal Project",
-      title: "Second Chances",
-      technologies: ["HTML", "CSS", "JavaScript", "ReactJS", "PetFinder API"],
-      info: "Second Chances is an app designed to help users find their furry friend. Users can search and filter adoptable pets like cats and dogs, using the Petfinder API to access and render data within the app. The app was built using React, making it easy to pass state between components. A perfect solution for pet lovers on the hunt for a new companion.",
-      live: "https://second-chances.vercel.app/",
-      github: "https://github.com/bradley-owens/Second_Chances",
+      type: "Assessment Project",
+      title: "Valearnis Quiz",
+      technologies: ["HTML", "CSS", "JavaScript", "ReactJS", "Quiz API"],
+      info: "This is a multiple choice quiz application built for a job application for Valearnis using React, Redux and React Router. The app retrieves questions from an API and presents them to the user one by one, with a quiz state management system and a question navigator for easy access to previously answered questions. The project was developed with an emphasis on efficiency and user-friendliness, and involved overcoming challenges.",
+      live: "https://quiz-one-kappa.vercel.app/",
+      github: "https://github.com/bradley-owens/quiz",
       animationDirectionLeft: 80,
       animationDirectionRight: -80,
       textAlign: projectAlignLeft,

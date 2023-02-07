@@ -3,6 +3,7 @@ import phoneIcon from "../../IMG/Icons/phone.png";
 import emailIcon from "../../IMG/Icons/email.png";
 import linkedInIcon from "../../IMG/Icons/linkedIn.png";
 import githubIcon from "../../IMG/Icons/github.png";
+import resume from "../../IMG/Bradley_Owens_Resume (2).pdf";
 import { motion } from "framer-motion";
 import { AnimationStyle } from "../Hooks/AnimationStyle";
 
@@ -11,16 +12,17 @@ const Contact = () => {
 
   const contactLinks = [
     {
+      icon: phoneIcon,
+      name: "Resume",
+      delay: 0.4,
+      // href: "tel:+61428845477",
+      href: resume,
+    },
+    {
       icon: emailIcon,
       name: "Email",
       delay: 0,
       href: "mailto:bradowens17@hotmail.com",
-    },
-    {
-      icon: phoneIcon,
-      name: "Phone",
-      delay: 0.4,
-      href: "tel:+61428845477",
     },
     {
       icon: linkedInIcon,
