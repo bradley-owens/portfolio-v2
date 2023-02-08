@@ -35,10 +35,6 @@
   animation: x 150s linear infinite alternate;
 }
 
-.x p {
-  visibility: hidden;
-}
-
 .y {
   bottom: 6rem;
   left: 5rem;
@@ -48,10 +44,14 @@
   background-color: rgba(255, 214, 10, 0.1);
   width: 24rem;
   height: 24rem;
+
   border-radius: 200px;
   animation: y 150s linear infinite alternate;
 }
 
+.x p {
+  visibility: hidden;
+}
 .y p {
   visibility: hidden;
 }
@@ -278,6 +278,24 @@
     border-radius: 200px;
     animation: y 150s linear infinite alternate;
   }
+
+  @keyframes x {
+    0% {
+      transform: translateX(calc(0vw));
+    }
+    100% {
+      transform: translateX(calc(-20vw));
+    }
+  }
+
+  @keyframes y {
+    0% {
+      transform: translateX(calc(0vw));
+    }
+    100% {
+      transform: translateX(calc(20vw));
+    }
+  }
 }
 
 @media (max-width: 588px) {
@@ -308,7 +326,7 @@
     width: 12rem;
     height: 12rem;
     border-radius: 200px;
-    animation: x 150s linear infinite alternate;
+    animation: x 30s linear infinite alternate;
   }
 
   .y {
@@ -320,7 +338,7 @@
     width: 18rem;
     height: 18rem;
     border-radius: 200px;
-    animation: y 150s linear infinite alternate;
+    animation: y 30s linear infinite alternate;
   }
 }
 

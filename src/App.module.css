@@ -11,6 +11,8 @@ body {
   overflow: scroll;
   background-color: black;
   color: white;
+  max-width: 1990px;
+  /* margin: 0 auto; */
 }
 
 ::-webkit-scrollbar {

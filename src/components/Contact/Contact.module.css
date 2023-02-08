@@ -429,16 +429,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3rem;
     width: 100%;
   }
 
   .link {
     display: flex;
-
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     margin-top: -1.5rem;
   }
 

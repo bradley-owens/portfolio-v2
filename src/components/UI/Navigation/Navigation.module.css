@@ -2,7 +2,6 @@
   position: sticky;
   /* top: 0;
   left: 0; */
-  /* width: 100vw; */
   padding: 1.5rem 3.5rem;
   display: flex;
   align-items: center;
@@ -125,7 +124,7 @@
   }
 
   .links {
-    position: fixed;
+    position: absolute;
     left: 0rem;
     top: 0rem;
     display: flex;
@@ -135,7 +134,7 @@
     gap: 5rem;
     background-color: black;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     pointer-events: none;
     clip-path: circle(100px at 90% -10%);
     -webkit-clip-path: circle(100px at 90% -10%);
@@ -143,7 +142,7 @@
   }
 
   .open {
-    position: fixed;
+    position: absolute;
     left: 0rem;
     top: 0rem;
     display: flex;

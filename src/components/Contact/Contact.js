@@ -14,14 +14,14 @@ const Contact = () => {
     {
       icon: phoneIcon,
       name: "Resume",
-      delay: 0.4,
+      delay: 0,
       // href: "tel:+61428845477",
       href: resume,
     },
     {
       icon: emailIcon,
       name: "Email",
-      delay: 0,
+      delay: 0.4,
       href: "mailto:bradowens17@hotmail.com",
     },
     {

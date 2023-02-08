@@ -1,5 +1,6 @@
 import Project from "../UI/Project/Project";
 import { motion } from "framer-motion";
+import useDeviceSize from "../Hooks/useDeviceSize";
 import styles from "./Projects.module.css";
 
 import project1ImgSrc from "../../IMG/moka-bar.png";
@@ -8,6 +9,7 @@ import project3ImgSrc from "../../IMG/networks.png";
 import project4ImgSrc from "../../IMG/quiz.png";
 
 const Projects = () => {
+  const [width] = useDeviceSize();
   const hStyle = { color: "#ffd60a" };
   const projectAlignLeft = { textAlign: "left" };
   const projectAlignRight = { textAlign: "right" };
@@ -25,8 +27,8 @@ const Projects = () => {
       info: "Moka Bar's website is a digital platform showcasing the cafe in Cairns. Built with NextJS, it offers fast server-side rendering and intuitive navigation between pages, providing customers with necessary information and tools to learn about the cafe, view the menu, and more. All in a beautifully designed, accessible format.",
       live: "http://www.mokabar.com.au/",
       github: "https://github.com/bradley-owens/moka-bar",
-      animationDirectionLeft: -80,
-      animationDirectionRight: 80,
+      animationDirectionLeft: -30,
+      animationDirectionRight: 30,
       textAlign: projectAlignRight,
       flexDirection: projectFlexNormal,
       alignDirection: projectFlexAlignEnd,
@@ -39,8 +41,8 @@ const Projects = () => {
       info: "Gotya Plumbing's website is a platform for the Gotya Plumbing business based in Queensland. Crafted with ReactJS, it serves as a single-page source for all services, reviews, and contact information required by clients. The website provides a clean and concise presentation of the business, making it easy for customers to find what they need.",
       live: "https://gotya-plumbing.vercel.app/",
       github: "https://github.com/bradley-owens/gotya-plumbing",
-      animationDirectionLeft: 80,
-      animationDirectionRight: -80,
+      animationDirectionLeft: 30,
+      animationDirectionRight: -30,
       textAlign: projectAlignLeft,
       flexDirection: projectFlexReverse,
       alignDirection: projectFlexAlignStart,
@@ -54,8 +56,8 @@ const Projects = () => {
       live: " https://networks-eight.vercel.app/",
       github: "https://github.com/bradley-owens/networks",
 
-      animationDirectionLeft: -80,
-      animationDirectionRight: 80,
+      animationDirectionLeft: -30,
+      animationDirectionRight: 30,
       textAlign: projectAlignRight,
       flexDirection: projectFlexNormal,
       alignDirection: projectFlexAlignEnd,
@@ -68,8 +70,8 @@ const Projects = () => {
       info: "This is a multiple choice quiz application built for a job application for Valearnis using React, Redux and React Router. The app retrieves questions from an API and presents them to the user one by one, with a quiz state management system and a question navigator for easy access to previously answered questions. The project was developed with an emphasis on efficiency and user-friendliness, and involved overcoming challenges.",
       live: "https://quiz-one-kappa.vercel.app/",
       github: "https://github.com/bradley-owens/quiz",
-      animationDirectionLeft: 80,
-      animationDirectionRight: -80,
+      animationDirectionLeft: 30,
+      animationDirectionRight: -30,
       textAlign: projectAlignLeft,
       flexDirection: projectFlexReverse,
       alignDirection: projectFlexAlignStart,
