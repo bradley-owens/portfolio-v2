@@ -1,8 +1,10 @@
 import styles from "./Navigation.module.css";
 import React, { useState } from "react";
+import useDeviceSize from "../../Hooks/useDeviceSize";
 
 const Navigation = () => {
   const [navState, setNavState] = useState(false);
+  const [width] = useDeviceSize();
 
   const toggleMobileNav = () => {
     setNavState(!navState);
@@ -12,16 +14,32 @@ const Navigation = () => {
     <div className={styles.nav}>
       <h3>Bradley Owens</h3>
       <div className={navState ? styles.open : styles.links}>
-        <a className={styles.link} onClick={toggleMobileNav} href="#about">
+        <a
+          className={styles.link}
+          onClick={width < 1051 ? toggleMobileNav : null}
+          href="#about"
+        >
           About
         </a>
-        <a className={styles.link} onClick={toggleMobileNav} href="#skills">
+        <a
+          className={styles.link}
+          onClick={width < 1051 ? toggleMobileNav : null}
+          href="#skills"
+        >
           Skills
         </a>
-        <a className={styles.link} onClick={toggleMobileNav} href="#projects">
+        <a
+          className={styles.link}
+          onClick={width < 1051 ? toggleMobileNav : null}
+          href="#projects"
+        >
           Projects
         </a>
-        <a className={styles.link} onClick={toggleMobileNav} href="#contact">
+        <a
+          className={styles.link}
+          onClick={width < 1051 ? toggleMobileNav : null}
+          href="#contact"
+        >
           Contact
         </a>
       </div>
