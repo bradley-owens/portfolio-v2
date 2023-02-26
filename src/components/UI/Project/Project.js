@@ -49,6 +49,9 @@ const Project = ({
         }}
       >
         <img src={imgSrc}></img>
+        {/* {title === "Gotya Plumbing Solutions" ? (
+          <h2>Re-Design in progress</h2>
+        ) : null} */}
         <div className={styles["button-container"]}>
           <a href={live} target="_blank">
             <img style={{ width: "2.5rem", height: "2.5rem" }} src={liveIcon} />
