@@ -1,5 +1,5 @@
 .nav {
-  position: sticky;
+  position: relative;
   /* height: 100px; */
   top: 0;
   left: 0;
