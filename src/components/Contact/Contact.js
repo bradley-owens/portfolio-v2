@@ -3,7 +3,7 @@ import phoneIcon from "../../IMG/Icons/phone.png";
 import emailIcon from "../../IMG/Icons/email.png";
 import linkedInIcon from "../../IMG/Icons/linkedIn.png";
 import githubIcon from "../../IMG/Icons/github.png";
-import resume from "../../IMG/Bradley_Owens_Resume (2).pdf";
+import resume from "../../IMG/CV.pdf";
 import { motion } from "framer-motion";
 import { AnimationStyle } from "../Hooks/AnimationStyle";
 
